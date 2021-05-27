@@ -1,9 +1,16 @@
 ﻿
 @{
     ViewBag.Title = "HW2";
+
+
+}
+<p>印出1到10</p>
+@for (int i = 1; i <= 10; i++)
+{
+<p>@i</p>
 }
 
-<h2>HW2</h2>
+<h2>HW2 @DateTime.Now</h2>
 
 <h4>姓名: @Html.TextBox("name")</h4>
 <br>
@@ -15,4 +22,4 @@
 <br>
 <h4>興趣: @Html.CheckBox("swimming", "S")游泳  @Html.CheckBox("reading", "R")閱讀 @Html.CheckBox("movie", "M")看電影</h4>
 <br>
-<h4>自我介紹: <textarea name="message" rows="4" cols="19"></textarea>  
+<h4>自我介紹: <textarea name="message" rows="4" cols="19"></textarea> 
